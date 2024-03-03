@@ -1,0 +1,121 @@
+.description-div{
+    color: #70645C;
+    font-family: "Ojuju", sans-serif;
+    width: 60%;
+    text-align: center;
+   
+}
+.web-description{
+    width: 80%;
+    margin: auto;
+    /* border: 1px yellowgreen solid; */
+    display: flex;
+    flex-direction: row;
+}
+
+.description-div p{
+    font-size: 15px;
+}
+
+.categories{
+    width: 80%;
+    margin: auto;
+    /* border: 1px red solid; */
+}
+.categories-button{
+    width: 220px;
+    height: 100px;
+    border-radius: 70px;
+    padding: 10px;
+    border: 1px #70645C solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #70645C;
+    cursor: pointer;
+    box-shadow: #70645C 0px 5px 15px;
+}
+
+.categories-button img{
+    width: 130px;
+}
+
+.categories-button-div{
+    display: flex;
+    justify-content: space-around;
+}
+.description-icon-slider{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.slideshow-container{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 100%;
+    /* border: 1px blueviolet solid; */
+    align-items: center;
+    padding: 10px;
+}
+
+
+.slide-image img{
+    width: 165px;
+    height: 165px;
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .slide-image img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .categories-button{
+        width: 160px;
+        height: 80px;
+    }
+
+    .categories-button img{
+        width: 80px;
+    }
+
+    .categories-content button{
+        display: none;
+    }
+
+    .description-div h2{
+        font-size: 14px;
+    }
+    .description-div p{
+        font-size: 12px;
+    }
+}
+
+/* small screens */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .slide-image img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .categories-button{
+        width: 130px;
+        height: 60px;
+    }
+
+    .categories-button img{
+        width: 55px;
+    }
+
+    .categories-content button{
+        display: none;
+    }
+    .description-div h2{
+        font-size: 12px;
+    }
+    .description-div p{
+        font-size: 10px;
+    }
+}

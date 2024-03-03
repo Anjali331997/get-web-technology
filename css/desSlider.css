@@ -1,0 +1,18 @@
+.slide-image{
+    margin-right: 13px;
+    border: 1px solid #70645C;
+    cursor: pointer;
+}
+
+.slide-image:hover{
+    background-color: #86817e;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* small screens */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    
+}

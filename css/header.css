@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand-nav {
+    /* border: 2px green solid; */
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.location-div {
+    /* border: 1px yellow solid; */
+    display: grid;
+    align-self: center;
+}
+
+.location-div img {
+    width: 20px;
+    height: 20px;
+}
+
+.brand-logo {
+    /* border: 1px orangered solid; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-name {
+    width: 150px;
+}
+
+.icons {
+    /* border: 1px rgb(18, 98, 163) solid; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+    /* border: 1px olivedrab solid; */
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .icons img {
+        width: 15px;
+        height: 15px;
+        /* border: 1px olivedrab solid; */
+    }
+
+    .icons {
+        /* border: 1px rgb(18, 98, 163) solid; */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-name {
+        width: 100px;
+    }
+    .location-div img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* small screens */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .icons img {
+        width: 12px;
+        height: 12px;
+        /* border: 1px olivedrab solid; */
+    }
+
+    .icons {
+        /* border: 1px rgb(18, 98, 163) solid; */
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .logo-name {
+        width: 70px;
+    }
+    .location-div img {
+        width: 12px;
+        height: 12px;
+    }
+}

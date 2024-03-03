@@ -1,0 +1,30 @@
+.animation-div {
+    background-color: #70645C;
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    border: 1px #70645C solid;
+    overflow: hidden;
+}
+
+.animation-div h3 {
+    margin-top: 0;
+}
+
+.animation-div div {
+    height: 60%;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+.animation-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+}

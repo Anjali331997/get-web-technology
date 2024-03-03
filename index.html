@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/timeless.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/des_cat.css">
+    <link rel="stylesheet" href="./css/bestseller.css">
+    <link rel="stylesheet" href="./css/desSlider.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="./css//testimonial.css">
+    <link rel="stylesheet" href="./css/animation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Web Technology</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar Part -->
+    <div class="header">
+
+        <div class="brand-nav">
+            <div class="location-div">
+                <img src="./assets/location.png" alt="location icon">
+            </div>
+            <div class="brand-logo">
+                <img class="logo" src="./assets/Logo Dark.png" alt="brand logo">
+                <img class="logo-name" src="./assets//Name Dark.png" alt="brand name">
+
+            </div>
+            <div class="icons">
+                <img src="./assets/cart.png" alt="cart">
+                <img src="./assets/Icon feather-heart.png" alt="heart">
+                <img src="./assets/profile.png" alt="profile">
+                <img src="./assets/search.png" alt="search">
+            </div>
+        </div>
+
+
+        <div class="menu-div">
+            <ul class="menu-list" id="menu-listid">
+                <li class="menu-items">Home</li>
+                <li class="menu-items">Face</li>
+                <li class="menu-items">Hair</li>
+                <li class="menu-items">Body</li>
+                <li class="menu-items">Secret's</li>
+                <li class="menu-items">Mini's</li>
+                <li class="menu-items">Gifting</li>
+                <li class="menu-items">Offers</li>
+                <li class="menu-items">Testimonials</li>
+                <li class="menu-items">Club</li>
+                <li class="menu-items">About Us</li>
+                <li class="responsive-menu-icon" onclick="responsiveFn()">
+                    <i class="fa fa-bars" id="menu-res-icon"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- slide Show -->
+        <div class="carousel-slider">
+            <img class="slideimage fade" src="./assets/sliderimages/slide1.png" alt="slideImage">
+            <img class="slideimage fade" src="./assets/sliderimages/slide2.png" alt="slideImage">
+            <img class="slideimage fade" src="./assets/sliderimages/slide3.png" alt="slideImage">
+            <button class="button-left" onclick="prevImage()"></button>
+            <button class="button-right" onclick="nextImage()"></button>
+        </div>
+
+        <div class="web-description">
+            <div class="description-div">
+                <h2>We seek the ancient. We seek the timeless
+                    <br>
+                    We seek the clean way
+                </h2>
+                <p>Inspired from the ancient our products have a rare potency to enhance beauty because we do custom
+                    formulation, curate ingredients, test, manufacture, design packaging all at our very own licensed
+                    organic factory. </p>
+            </div>
+            <div class="description-icon-slider">
+                <div class="slideshow-container" onclick="nextSlide()">
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30 copy 2.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30 copy 5.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30 copy.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30 copy 7.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30 copy 8.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30 copy 9.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30 copy3.png" alt="">
+                    </div>
+                    <div class="slide-image">
+                        <img src="./assets/desSlider/Artboard 30.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="categories">
+            <div class="categories-button-div">
+                <button class="categories-button active" id="hair-button" onclick="hairButtonClick(this)">
+                    <img src="./assets/buttons/Image 17.png" alt="">
+                    <h2>FACE</h2>
+                </button>
+
+                <button class="categories-button" id="face-button" onclick="faceButtonClick(this)">
+                    <img src="./assets/buttons/Image 18.png" alt="">
+                    <h2>HAIR</h2>
+                </button>
+
+                <button class="categories-button" id="skin-button" onclick="skinButtonClick(this)">
+                    <img src="./assets/buttons/Image 19.png" alt="">
+                    <h2>SKIN</h2>
+                </button>
+            </div>
+
+            <div class="categories-result" id="categories display">
+                <div class="categories-content">
+
+                    <button class="left-arrow" >
+                        <i class="fa fa-long-arrow-left" aria-hidden="true" style="color:#70645C ;"></i>
+                    </button>
+
+                    <div class="products">
+
+                        <div id="face-products">
+                            <div class="best-sell-item">
+                                <img src="./assets/Mahodaya Rose Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Mahodaya Kannauj Rose Organic
+                                    Lip Butter - Pink</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 650</p>
+                            </div>
+
+                            <div class="best-sell-item">
+                                <img src="./assets/Kumkumadi 35ml Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Indus Valley Kumkumadi Beauty
+                                    Concentrate - For All Skin Types</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 1350</p>
+                            </div>
+
+                            <div class="best-sell-item">
+                                <img src="./assets/Morrocan Argan Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Morrocan Argan Drops Day & Night
+                                    Repairing Face Cream</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 950</p>
+                            </div>
+
+                            <div class="best-sell-item">
+                                <img src="./assets/Kushuma 35ml Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Himalayan Kusuma Oil Hydrating
+                                    Anti-Ageing Vit-C Face Serum</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 750</p>
+                            </div>
+                        </div>
+
+                        <div id="hair-products">
+                            <div class="best-sell-item">
+                                <img src="./assets/Rare Clay Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Mahodaya Kannauj Rose Organic
+                                    Lip Butter - Pink</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 650</p>
+                            </div>
+
+                            <div class="best-sell-item">
+                                <img src="./assets/Theobroma Conditioner Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Indus Valley Kumkumadi Beauty
+                                    Concentrate - For All Skin Types</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 1350</p>
+                            </div>
+
+                            <div class="best-sell-item">
+                                <img src="./assets/Mediterranean Dew Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Morrocan Argan Drops Day & Night
+                                    Repairing Face Cream</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 950</p>
+                            </div>
+
+                            <div class="best-sell-item">
+                                <img src="./assets/Malabar Kokum Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Himalayan Kusuma Oil Hydrating
+                                    Anti-Ageing Vit-C Face Serum</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 750</p>
+                            </div>
+
+                        </div>
+
+                        <div id="skin-products">
+                            <div class="best-sell-item">
+                                <img src="./assets/Malabar Kokum Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Himalayan Kusuma Oil Hydrating
+                                    Anti-Ageing Vit-C Face Serum</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 750</p>
+                            </div>
+                            <div class="best-sell-item">
+                                <img src="./assets/Morrocan Argan Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Morrocan Argan Drops Day & Night
+                                    Repairing Face Cream</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 950</p>
+                            </div>
+                            <div class="best-sell-item">
+                                <img src="./assets/Mediterranean Dew Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Morrocan Argan Drops Day & Night
+                                    Repairing Face Cream</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 950</p>
+                            </div>
+                            <div class="best-sell-item">
+                                <img src="./assets/Mahodaya Rose Paint.png" alt="Mahodaya Rose Paint">
+                                <p>Mahodaya Kannauj Rose Organic
+                                    Lip Butter - Pink</p>
+                                <div>
+                                    <span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </span>
+
+                                    <p>|141 rating</p>
+                                </div>
+
+                                <p>&#8377 650</p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <button class="right-arrow">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true" style="color:#70645C ;"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div class="best-seller">
+            <h1>Our Best seller</h1>
+
+            <div class="best-seller-div">
+
+                <div class="best-sell-item">
+                    <img src="./assets/Mahodaya Rose Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Mahodaya Kannauj Rose Organic
+                        Lip Butter - Pink</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 650</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kumkumadi 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Indus Valley Kumkumadi Beauty
+                        Concentrate - For All Skin Types</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 1350</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Morrocan Argan Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Morrocan Argan Drops Day & Night
+                        Repairing Face Cream</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 950</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kushuma 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Himalayan Kusuma Oil Hydrating
+                        Anti-Ageing Vit-C Face Serum</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 750</p>
+                </div>
+
+
+            </div>
+
+            <div class="best-seller-div">
+
+                <div class="best-sell-item">
+                    <img src="./assets/Mahodaya Rose Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Mahodaya Kannauj Rose Organic
+                        Lip Butter - Pink</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 650</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kumkumadi 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Indus Valley Kumkumadi Beauty
+                        Concentrate - For All Skin Types</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 1350</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Morrocan Argan Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Morrocan Argan Drops Day & Night
+                        Repairing Face Cream</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 950</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kushuma 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Himalayan Kusuma Oil Hydrating
+                        Anti-Ageing Vit-C Face Serum</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 750</p>
+                </div>
+
+
+            </div>
+
+            <div class="best-seller-div">
+
+                <div class="best-sell-item">
+                    <img src="./assets/Mahodaya Rose Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Mahodaya Kannauj Rose Organic
+                        Lip Butter - Pink</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 650</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kumkumadi 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Indus Valley Kumkumadi Beauty
+                        Concentrate - For All Skin Types</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 1350</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Morrocan Argan Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Morrocan Argan Drops Day & Night
+                        Repairing Face Cream</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 950</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kushuma 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Himalayan Kusuma Oil Hydrating
+                        Anti-Ageing Vit-C Face Serum</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 750</p>
+                </div>
+
+
+            </div>
+
+            <div class="best-seller-div">
+
+                <div class="best-sell-item">
+                    <img src="./assets/Mahodaya Rose Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Mahodaya Kannauj Rose Organic
+                        Lip Butter - Pink</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 650</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kumkumadi 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Indus Valley Kumkumadi Beauty
+                        Concentrate - For All Skin Types</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 1350</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Morrocan Argan Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Morrocan Argan Drops Day & Night
+                        Repairing Face Cream</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 950</p>
+                </div>
+
+                <div class="best-sell-item">
+                    <img src="./assets/Kushuma 35ml Paint.png" alt="Mahodaya Rose Paint">
+                    <p>Himalayan Kusuma Oil Hydrating
+                        Anti-Ageing Vit-C Face Serum</p>
+                    <div>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </span>
+
+                        <p>|141 rating</p>
+                    </div>
+
+                    <p>&#8377 750</p>
+                </div>
+
+
+            </div>
+
+
+
+            <button class="view-all-button" id="all" onclick="viewAllProducts()">View All</button>
+            <button class="view-less-button" id="less" onclick="viewlessProducts()">View Less</button>
+
+        </div>
+        <hr>
+
+        <div class="customer-testimonial">
+            <h1>Our Best seller</h1>
+
+            <div class="testimonials-content">
+
+                <button class="left-arrow" onclick="leftSlide()">
+                    <i class="fa fa-long-arrow-left" aria-hidden="true" style="color:#70645C ;"></i>
+                </button>
+
+                <div class="testimonials">
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            The frizz reduction and
+                            smoothening are fantastic for
+                            your cream. Sometimes I blow
+                            dry my hair and straighten
+                            them, but they look scorched
+                            and frizzy. SoI tried your
+                            cream. It was really smooth
+                            and Less frizzy.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Aarav P</h3>
+                    </div>
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            Highly recommended organic
+                            product because of it's natural
+                            ingredients which perfectly
+                            suits all lips.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Anjana M</h3>
+                    </div>
+
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            This sunscreen is very good for
+                            summer and u can use this
+                            winter also i have dry skin
+                            and i use this cream its
+                            very good for my skin..
+                            and its not sticky.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Namitha M</h3>
+                    </div>
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            Can be used daily and i am
+                            loving how its easy to apply
+                            people likeme who are not a
+                            fan of foundation can for this
+                            it gives a really good finish
+                            and perfect flawless
+                            appearance.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Rajan K R</h3>
+                    </div>
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            This sunscreen is very good for
+                            summer and u can use this
+                            winter also i have dry skin
+                            and i use this cream its
+                            very good for my skin..
+                            and its not sticky.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Ram K R</h3>
+                    </div>
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            The frizz reduction and
+                            smoothening are fantastic for
+                            your cream. Sometimes I blow
+                            dry my hair and straighten
+                            them, but they look scorched
+                            and frizzy. SoI tried your
+                            cream. It was really smooth
+                            and Less frizzy.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Aarav P</h3>
+                    </div>
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            Highly recommended organic
+                            product because of it's natural
+                            ingredients which perfectly
+                            suits all lips.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Anjana M</h3>
+                    </div>
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            This sunscreen is very good for
+                            summer and u can use this
+                            winter also i have dry skin
+                            and i use this cream its
+                            very good for my skin..
+                            and its not sticky.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Ram K R</h3>
+                    </div>
+
+
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            This sunscreen is very good for
+                            summer and u can use this
+                            winter also i have dry skin
+                            and i use this cream its
+                            very good for my skin..
+                            and its not sticky.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Namitha M</h3>
+                    </div>
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            Highly recommended organic
+                            product because of it's natural
+                            ingredients which perfectly
+                            suits all lips.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Anjana M</h3>
+                    </div>
+
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            This sunscreen is very good for
+                            summer and u can use this
+                            winter also i have dry skin
+                            and i use this cream its
+                            very good for my skin..
+                            and its not sticky.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Namitha M</h3>
+                    </div>
+
+                    <div class="testimonial-div">
+                        <i class="fa fa-quote-left" style="font-size: 30px;color:white"></i>
+                        <p class="review">
+                            This sunscreen is very good for
+                            summer and u can use this
+                            winter also i have dry skin
+                            and i use this cream its
+                            very good for my skin..
+                            and its not sticky.
+                        </p>
+                        <span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-empty checked"></span>
+                        </span>
+
+                        <h3>Ram K R</h3>
+                    </div>
+                </div>
+
+                <button class="left-arrow" onclick="rightSlide()">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true" style="color:#70645C ;"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="timeless-div">
+            <h1>Why timeless</h1>
+            <div class="timesless-content">
+                <div class="timeless-div-content tint">
+                    <h3 class="heading">The Place Holder</h3>
+                    <p class="text">
+                        Our products are a re-imagination of
+                        treasured ancient beauty rituals for
+                        skin, hair, body & beauty. Melding
+                        ancient wisdom with science, our
+                        organic products soaked with
+                        essential vitamins, minerals &
+                        botanicals, have a rare potency
+                        to enhance your beauty or
+                        solve a specific concern.
+
+                        We use certified organic ingredients
+                        which make our products totally
+                        safe. Free from parabens, silicone,
+                        sulphates, pthalates, GMO, with
+                        some of our products are vegan
+                        while all of them are cruelty
+                        free and safe for planet.
+
+                        Gift yourself goodness
+                        made the ancient way.
+                    </p>
+                </div>
+                <div class="timeless-div-content tint">
+                    <h3 class="heading">The Place Holder</h3>
+                    <p class="text">
+                        Our products are a re-imagination of
+                        treasured ancient beauty rituals for
+                        skin, hair, body & beauty. Melding
+                        ancient wisdom with science, our
+                        organic products soaked with
+                        essential vitamins, minerals &
+                        botanicals, have a rare potency
+                        to enhance your beauty or
+                        solve a specific concern.
+
+                        We use certified organic ingredients
+                        which make our products totally
+                        safe. Free from parabens, silicone,
+                        sulphates, pthalates, GMO, with
+                        some of our products are vegan
+                        while all of them are cruelty
+                        free and safe for planet.
+
+                        Gift yourself goodness
+                        made the ancient way.
+                    </p>
+                </div>
+                <div class="timeless-div-content tint">
+                    <h3 class="heading">The Place Holder</h3>
+                    <p class="text">
+                        Our products are a re-imagination of
+                        treasured ancient beauty rituals for
+                        skin, hair, body & beauty. Melding
+                        ancient wisdom with science, our
+                        organic products soaked with
+                        essential vitamins, minerals &
+                        botanicals, have a rare potency
+                        to enhance your beauty or
+                        solve a specific concern.
+
+                        We use certified organic ingredients
+                        which make our products totally
+                        safe. Free from parabens, silicone,
+                        sulphates, pthalates, GMO, with
+                        some of our products are vegan
+                        while all of them are cruelty
+                        free and safe for planet.
+
+                        Gift yourself goodness
+                        made the ancient way.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="animation-container">
+            <div class="animation-div">
+                <div>
+                    <img src="./assets/delivery.gif" alt="">
+                </div>
+                
+                <h3>FREE<br>DELIVERY</h3>
+            </div>
+
+            <div class="animation-div">
+                <div>
+                    <img src="./assets/compliments.gif" alt="">
+                </div>
+                
+                <h3>COMPLIMENTARY<br>GIFTS</h3>
+            </div>
+
+            <div class="animation-div">
+                <div> <img src="./assets/refer.gif" alt=""></div>
+               
+                <h3>REFER</h3>
+            </div>
+
+            <div class="animation-div">
+                <div> <img src="./assets/gifts.gif" alt=""></div>
+               
+                <h3>GREAT<br>REWARDS</h3>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="contact">
+        <div class="inner-contact">
+            <div class="contact-items">
+                <button class="contact-buttons">SHOP</button>
+                <ul class="contact-list">
+                    <li>Face Care</li>
+                    <li>Body Care</li>
+                    <li>Hair Care</li>
+                    <li>Custom</li>
+                    <li>Gifting</li>
+                </ul>
+            </div>
+            <div class="contact-items">
+                <button class="contact-buttons">ABOUT</button>
+                <ul class="contact-list">
+                    <li>Our Story</li>
+                    <li>Giving Back</li>
+                    <li>Why Timeless</li>
+                    <li>Philosophy</li>
+                    <li>Certification</li>
+                    <li>Career</li>
+                    <li>Policies</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="contact-items">
+                <button class="contact-buttons">QUICK LINKS</button>
+                <ul class="contact-list">
+                    <li>My Account</li>
+                    <li>Custom Product</li>
+                    <li>Timeless Club</li>
+                    <li>Customer Stories</li>
+                    <li>Terms & Conditins</li>
+                    <li>Refer a Friend</li>
+                    <li>Contact Us</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div class="contact-items">
+                <button class="contact-buttons">GET IN TOUCH</button>
+                <ul class="contact-list">
+                    <li>Email:timelesscare@timeslessbeautysecrets.in</li>
+                    <li>Phone:123654789</li>
+                    <li>Address: EPIP Induxtria; Area, Whitefield Bangalore-560066</li>
+
+                </ul>
+                <div class="sub-inner-Contact">
+                    <button class="contact-buttons">FOLLOW US</button>
+                    <div class="socials">
+                        <a href="">
+                            <img src="./assets/socialIcons/icons8-twitter-50.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/socialIcons/icons8-facebook-50.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/socialIcons/icons8-youtube-50.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/socialIcons/icons8-linked-in-50.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./assets/socialIcons/icons8-instagram-50.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="index.js"></script>
+<script src="slider.js"></script>
+<script src="bestseller.js"></script>
+<script src="desSlider.js"></script>
+<script src="categories.js"></script>
+<script src="testimonial.js"></script>

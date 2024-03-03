@@ -1,0 +1,109 @@
+.best-seller h1 {
+    color: #70645C;
+    text-align: center;
+}
+
+.best-seller {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.checked {
+    color: rgb(15, 118, 136);
+}
+
+.best-sell-item {
+    width: 230px;
+   
+    /* height: 300px; */
+    /* border: 1px violet solid; */
+    text-align: center;
+}
+
+.best-sell-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.best-sell-item p {
+    padding: 3px;
+}
+
+.best-sell-item div {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-seller-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: space-between; */
+    /* align-self: center; */
+    padding-top: 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid aqua; */
+    /* gap: 30px; */
+}
+
+.view-all-button{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 70px;
+    /* padding: 10px; */
+    border: 1px #70645C solid;
+    color: #70645C;
+    cursor: pointer;
+    box-shadow: #70645C 0px 5px 15px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.view-less-button{
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 70px;
+    /* padding: 10px; */
+    border: 1px #70645C solid;
+    color: #70645C;
+    cursor: pointer;
+    box-shadow: #70645C 0px 5px 15px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .best-seller-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .best-sell-item {
+        width: 200px;
+       
+    }
+    
+}
+
+/* small screens */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .best-seller-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .best-sell-item {
+        width: 160px;
+       
+    }
+}
