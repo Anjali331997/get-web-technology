@@ -42,11 +42,17 @@
     #face-products,
     #hair-products,
     #skin-products {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
         
         justify-content: space-between;
         /* display: none; */
+    }
+    .best-sell-item>p {
+        font-size: 13px;
+    }
+    .best-sell-item span{
+        font-size: 13px;
     }
 }
 
@@ -56,7 +62,15 @@
     #hair-products,
     #skin-products {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        gap: 30px;
+        
+        justify-content: space-between;
         /* display: none; */
+    }
+    .best-sell-item>p {
+        font-size: 13px;
+    }
+    .best-sell-item span{
+        font-size: 13px;
     }
 }

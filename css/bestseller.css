@@ -22,6 +22,10 @@
     /* height: 300px; */
     border: 1px violet solid;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .best-sell-item img {
@@ -93,8 +97,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .best-sell-item {
-        width: 200px;
-       
+        height: 300px;
     }
     
 }
@@ -104,8 +107,8 @@
     .best-seller-div{
         grid-template-columns: repeat(2, 1fr);
     }
-    .best-sell-item {
+    /* .best-sell-item {
         width: 160px;
        
-    }
+    } */
 }
