@@ -52,6 +52,9 @@
         grid-template-columns: repeat(2,1fr);
        gap: 10px;
     }
+    .testimonial-div{
+        height: 280px;
+    }
     
 }
 
