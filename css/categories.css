@@ -1,3 +1,7 @@
+
+.products{
+    width: 100%;
+}
 .categories-content {
     display: flex;
     flex-direction: row;
@@ -24,11 +28,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* align-self: center; */
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    left: 0;
     /* display: none; */
-    /* border: 1px solid aqua; */
+    border: 1px solid aqua;
     gap: 30px;
     display: none;
+    justify-content: space-evenly;
 }
 
 @media all and (min-width: 768px) and (max-width: 1064px) {
@@ -37,8 +43,10 @@
     #hair-products,
     #skin-products {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        display: none;
+        gap: 0px;
+        
+        justify-content: space-between;
+        /* display: none; */
     }
 }
 
@@ -49,6 +57,6 @@
     #skin-products {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-        display: none;
+        /* display: none; */
     }
 }

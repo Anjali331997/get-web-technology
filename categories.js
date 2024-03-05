@@ -9,6 +9,7 @@ function hairButtonClick() {
     button.className += " active"
 
     document.getElementById("face-products").style.display="grid";
+    
     document.getElementById("hair-products").style.display="none";
     document.getElementById("skin-products").style.display="none";
 }
