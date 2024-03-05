@@ -10,7 +10,7 @@
 }
 
 .animation-div h3 {
-    margin-top: 0;
+    margin-top: 3px;
 }
 
 .animation-div div {
@@ -19,12 +19,55 @@
     background-color: white;
 }
 
-.animation-container{
+.animation-container {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     margin: auto;
     padding-bottom: 20px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1064px) {
+
+    .animation-div {
+        width: 150px;
+        height: 150px;
+    }
+
+    .animation-div div {
+        height: 60%;
+        margin-bottom: 0;
+        /* background-color: rgb(158, 42, 42); */
+    }
+
+    .animation-div img {
+        width: 110px;
+    }
+    .animation-div h3 {
+        font-size: 15px;
+    }
+    
+}
+
+/* small screens */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .animation-div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .animation-div div {
+        height: 60%;
+        margin-bottom: 0;
+        /* background-color: rgb(42, 150, 158); */
+    }
+
+    .animation-div img {
+        width: 75px;
+    }
+    .animation-div h3 {
+        font-size: 12px;
+    }
 }
