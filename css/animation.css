@@ -7,6 +7,7 @@
     text-align: center;
     border: 1px #70645C solid;
     overflow: hidden;
+    margin-left: 0px;
 }
 
 .animation-div h3 {
@@ -22,8 +23,12 @@
 .animation-container {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
+    
+    grid-template-columns: repeat(4, auto);
+    border: 1px yellow solid;
+    /* align-content: space-evenly; */
+    justify-content: space-between;
+    padding-left: 0;
     align-items: center;
     margin: auto;
     padding-bottom: 20px;
